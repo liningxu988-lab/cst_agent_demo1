@@ -4,6 +4,7 @@ CST 自动设计主程序
 """
 
 import json
+import re
 import sys
 import time
 from pathlib import Path
@@ -456,6 +457,32 @@ def _handle_cst_error(
     return fix
 
 
+def _has_actionable_cst_error(cst_ctrl) -> bool:
+    """检查 CST 错误报告是否包含可用于 AI 修复的错误线索。"""
+    if not hasattr(cst_ctrl, "get_cst_error_report"):
+        return False
+    report = cst_ctrl.get_cst_error_report() or {}
+    if not isinstance(report, dict):
+        return False
+
+    message = str(report.get("message", "")).strip()
+    if message:
+        return True
+
+    cst_report = report.get("cst_report") or {}
+    if not isinstance(cst_report, dict):
+        return False
+    merged = "\n".join(str(v) for v in cst_report.values() if v)
+    if not merged.strip():
+        return False
+
+    if re.search(r"\b(error|failed|fatal|exception)\b", merged, re.IGNORECASE):
+        if re.search(r"\b0\s+errors?\b", merged, re.IGNORECASE):
+            return False
+        return True
+    return False
+
+
 def run_design_iteration(
     cst_ctrl,
     ai_client: DeepSeekClient,
@@ -504,6 +531,8 @@ def run_design_iteration(
 
         # Step 2: 运行仿真
         print("\n[2/4] 运行 CST 仿真...")
+        if hasattr(cst_ctrl, "last_cst_error"):
+            cst_ctrl.last_cst_error = {}
         if hasattr(cst_ctrl, "set_result_channels"):
             cst_ctrl.set_result_channels(design_task.get("enabled_result_channels", ["s_params"]))
         if not cst_ctrl.run_simulation(wait_complete=True):
@@ -513,6 +542,23 @@ def run_design_iteration(
             )
             if fix is None:
                 return {"error": "仿真失败"}, True
+            params, port_plan, new_solver = _apply_error_fix(params, port_plan, fix.get("fix_plan", {}), design_task)
+            if new_solver:
+                solver_plan = new_solver
+            boundary_hint = fix.get("fix_plan", {}).get("boundary_hint", "")
+            if boundary_hint:
+                print(f"  [ErrorRecovery] boundary_hint (供手动参考): {boundary_hint}")
+            continue
+
+        # Step 2.5: 即便仿真成功，也检查 CST 错误报告并按需触发 AI 修复
+        if _has_actionable_cst_error(cst_ctrl):
+            print("\n[2.5/4] 检测到 CST 错误报告，触发 AI 修复...")
+            fix = _handle_cst_error(
+                cst_ctrl, ai_client, design_task, params, port_plan, history,
+                "仿真后检测到 CST 错误报告", enable_recovery, error_attempt, max_error_retries,
+            )
+            if fix is None:
+                return {"error": "仿真后检测到 CST 错误报告"}, True
             params, port_plan, new_solver = _apply_error_fix(params, port_plan, fix.get("fix_plan", {}), design_task)
             if new_solver:
                 solver_plan = new_solver
