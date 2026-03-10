@@ -1,0 +1,7 @@
+{
+  "project_path": "E:\\code\\cst_agent_demo\\templates\\antenna_template.cst",
+  "model_params": {
+    "patch_length": 12.0,
+    "patch_width": 10.0
+  }
+}

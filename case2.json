@@ -1,0 +1,9 @@
+{
+    "patch_length": 16.0,
+    "patch_width": 6.0,
+    "targets": {
+      "freq_min_GHz": 2.4,
+      "freq_max_GHz": 2.5,
+      "s11_max_dB": -10.0
+    }
+  }

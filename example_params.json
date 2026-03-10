@@ -1,0 +1,11 @@
+{
+  "_comment": "CST 自动设计参数示例文件",
+  "project_path": "templates/antenna_template",
+  "patch_length": 12.0,
+  "patch_width": 10.0,
+  "targets": {
+    "freq_min_GHz": 2.4,
+    "freq_max_GHz": 2.5,
+    "s11_max_dB": -10.0
+  }
+}

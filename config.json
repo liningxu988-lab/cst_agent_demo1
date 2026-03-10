@@ -1,0 +1,37 @@
+{
+  "_comment": "CST Auto Design - FULLY AUTOMATIC Configuration",
+
+  "deepseek_api_key": "sk-c97d3d049403416aa383ca8c51253938",
+  "deepseek_model": "deepseek-chat",
+  "deepseek_base_url": "https://api.deepseek.com",
+
+  "cst_settings": {
+    "_comment": "FULLY AUTOMATIC MODES (zero human intervention):",
+    "_comment1": "  'fully_auto' - ZERO-CLICK: Command line auto-start + embedded macro (RECOMMENDED)",
+    "_comment2": "  'python_api' - 100% auto: Official API (Python 3.10-3.11 recommended)",
+    "_comment3": "MANUAL MODES:",
+    "_comment4": "  'batch' - Auto-start but may need CST security settings",
+    "_comment5": "  'auto_macro' - One-click per iteration",
+    "_comment6": "  'file' - Step-by-step manual",
+    "_comment7": "  'fake' - Test without CST",
+    "_comment8": "  'auto' - Auto-select best available",
+    "controller_mode": "python_api",
+    "auto_find_cst": true,
+    "cst_exe_path": "",
+    "preferred_s11_tree_path": "1D Results\\Adaptive Meshing\\f=5\\S-Parameters\\SZmax(1),Zmax(1)",
+    "allow_proxy_curve": false,
+    "ai_role_profile": "你是一个天线与电磁领域的专家，具有充足的电磁仿真经验以及CST软件的建模与仿真使经验，擅长超表面，天线罩，天线的设计与调参。",
+    "strict_result_required": true,
+    "use_fake_controller": false,
+    "simulation_timeout": 600,
+    "enable_cst_error_ai_recovery": true,
+    "max_error_retries": 3
+  },
+
+  "design_settings": {
+    "max_iterations": 10,
+    "convergence_threshold": 0.1,
+    "auto_save": true,
+    "output_dir": "outputs"
+  }
+}

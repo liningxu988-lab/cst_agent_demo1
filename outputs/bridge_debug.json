@@ -1,0 +1,41 @@
+{
+  "success": true,
+  "project_path": "E:\\code\\cst_agent_demo\\templates\\antenna_template.cst",
+  "project_exists": true,
+  "project_suffix_ok": true,
+  "output_dir": "E:\\code\\cst_agent_demo\\outputs",
+  "received_params": {
+    "patch_length": 12.0,
+    "patch_width": 10.0,
+    "targets": {
+      "freq_min_GHz": 2.4,
+      "freq_max_GHz": 2.5,
+      "s11_max_dB": -10.0
+    }
+  },
+  "model_params": {
+    "patch_length": 12.0,
+    "patch_width": 10.0
+  },
+  "param_task_file": "E:\\code\\cst_agent_demo\\outputs\\cst_param_task.json",
+  "param_update_script": "E:\\code\\cst_agent_demo\\outputs\\cst_param_update.py",
+  "cst_probe": {
+    "install_base": "D:\\Program Files (x86)\\CST Studio Suite 2024",
+    "install_exists": true,
+    "exe_candidates_checked": [
+      "D:\\Program Files (x86)\\CST Studio Suite 2024\\CST DESIGN ENVIRONMENT.exe"
+    ],
+    "found_exes": [
+      "D:\\Program Files (x86)\\CST Studio Suite 2024\\CST DESIGN ENVIRONMENT.exe"
+    ],
+    "cst_found": true,
+    "exe_found": true
+  },
+  "launch_info": {
+    "launch_success": true,
+    "pid": 32500,
+    "opened_project": "E:\\code\\cst_agent_demo\\templates\\antenna_template.cst",
+    "message": "已尝试启动 CST 并打开模板工程"
+  },
+  "message": "已完成模板工程、主程序探测、启动测试，并生成参数任务与参数更新脚本模板"
+}
