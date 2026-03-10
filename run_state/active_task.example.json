@@ -1,0 +1,84 @@
+{
+  "task_id": "run_1731000000",
+  "phase": "param_update",
+  "project_path": "templates/antenna_template.cst",
+  "current_params": {
+    "patch_length": 11.5,
+    "patch_width": 10.0
+  },
+  "targets": {
+    "freq_min_GHz": 2.4,
+    "freq_max_GHz": 2.5,
+    "s11_max_dB": -10.0
+  },
+  "max_iterations": 10,
+  "iteration_records": [
+    {
+      "iteration": 1,
+      "params": {
+        "patch_length": 12.0,
+        "patch_width": 10.0
+      },
+      "result_snapshot": {
+        "success": true,
+        "results": {
+          "s_params": {
+            "success": true,
+            "channels": {
+              "S11": {
+                "frequencies_GHz": [2.4, 2.45, 2.5],
+                "magnitude_dB": [-8.5, -11.2, -9.1]
+              }
+            },
+            "summary": {
+              "s11_min_dB": -11.2,
+              "freq_at_min_GHz": 2.45,
+              "bandwidth_10dB_MHz": 80.0
+            }
+          }
+        },
+        "errors": []
+      },
+      "evaluation": {
+        "s_params_ok": true,
+        "all_ok": true,
+        "details": {
+          "s_params": {
+            "s11_min_dB": -11.2,
+            "freq_at_min_GHz": 2.45,
+            "threshold_dB": -10.0,
+            "target_freq_range": [2.4, 2.5]
+          }
+        }
+      },
+      "ai_decision": {
+        "parameter_plan": {
+          "changes": {
+            "patch_length": 11.5
+          }
+        },
+        "stop_decision": {
+          "stop": false,
+          "reason": "继续优化"
+        }
+      },
+      "updated_at": "2025-03-09T10:30:00"
+    }
+  ],
+  "best_result": {
+    "iteration": 1,
+    "params": {
+      "patch_length": 12.0,
+      "patch_width": 10.0
+    },
+    "s11_min_dB": -11.2,
+    "freq_at_min_GHz": 2.45,
+    "bandwidth_10dB_MHz": 80.0,
+    "all_ok": true,
+    "updated_at": "2025-03-09T10:30:00"
+  },
+  "current_iteration": 1,
+  "created_at": "2025-03-09T10:00:00",
+  "updated_at": "2025-03-09T10:30:00",
+  "meta": {}
+}

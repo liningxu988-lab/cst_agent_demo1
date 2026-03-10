@@ -1,0 +1,20 @@
+{
+  "input": {
+    "params": {
+      "patch_length": "number",
+      "patch_width": "number"
+    },
+    "targets": {
+      "freq_min_GHz": "number",
+      "freq_max_GHz": "number",
+      "s11_max_dB": "number"
+    }
+  },
+  "output": {
+    "success": "boolean",
+    "s11_min_dB": "number",
+    "freq_at_min_GHz": "number",
+    "all_ok": "boolean",
+    "params_used": "object"
+  }
+}

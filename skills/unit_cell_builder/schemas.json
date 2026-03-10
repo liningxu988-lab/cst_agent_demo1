@@ -1,0 +1,19 @@
+{
+  "input": {
+    "structure_plan": {
+      "structure_type": "single_pec | three_layer",
+      "params": {
+        "patch_length": "number",
+        "patch_width": "number",
+        "substrate_height": "number (three_layer)",
+        "dielectric_er": "number (three_layer)"
+      }
+    },
+    "project_path": "string"
+  },
+  "output": {
+    "success": "boolean",
+    "results": "array",
+    "params_applied": "object"
+  }
+}
