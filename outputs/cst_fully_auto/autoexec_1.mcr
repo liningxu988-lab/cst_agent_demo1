@@ -27,6 +27,8 @@ Sub Main()
     Debug.Print "[AUTO] Step 1: Setting parameters..."
     StoreDoubleParameter "patch_length", CDbl(12.0)
     StoreDoubleParameter "patch_width", CDbl(10.0)
+    StoreDoubleParameter "substrate_height", CDbl(1.6)
+    StoreDoubleParameter "dielectric_er", CDbl(4.4)
     If Err.Number <> 0 Then
         WriteStatus "FAILED", "Parameter error: " & Err.Description
         Exit Sub

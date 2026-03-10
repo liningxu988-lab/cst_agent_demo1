@@ -1,0 +1,518 @@
+Frontend-Node:  ======================
+                Mesher selection: FPBA
+                ======================
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Tue Tue Mar 10 20:38:26 2026
+started: parallelization control
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+======================================================================================
+ - hardware info
+   + cpu name                    : 12th Gen Intel(R) Core(TM) i7-12700K
+   + sockets                     : 1
+   + cores per socket            : 8
+   + hyperthreading              : on
+   + ht-units                    : 2
+   + efficiency cores            : 4, not used
+   + max cpuid level             : 32
+   + max cpuid ext. level        : 8
+   + numa nodes                  : 1
+   + internal cpu info           : CPUID: selected engine is 'Leaf 0xB detection'
+performance cores:
+apic ids           : 0, 1, 8, 9, 16, 17, 24, 25, 32, 33, 40, 41, 48, 49, 56, 57
+apic ids (fallback): 0, 1, 8, 9, 16, 17, 24, 25, 32, 33, 40, 41, 48, 49, 56, 57
+from cpu registers: 0, 1, 8, 9, 16, 17, 24, 25, 32, 33, 40, 41, 48, 49, 56, 57
+fallback: 0, 1, 8, 9, 16, 17, 24, 25, 32, 33, 40, 41, 48, 49, 56, 57
+combined: 0, 1, 8, 9, 16, 17, 24, 25, 32, 33, 40, 41, 48, 49, 56, 57
+core 0 type: Intel Core
+core 1 type: Intel Core
+core 2 type: Intel Core
+core 3 type: Intel Core
+core 4 type: Intel Core
+core 5 type: Intel Core
+core 6 type: Intel Core
+core 7 type: Intel Core
+core 8 type: Intel Core
+core 9 type: Intel Core
+core 10 type: Intel Core
+core 11 type: Intel Core
+core 12 type: Intel Core
+core 13 type: Intel Core
+core 14 type: Intel Core
+core 15 type: Intel Core
+max id per cpu: 128
+SMT mask: 1
+Core mask: 7e
+Package mask: ffffff80
+set results:
+  - packages: 1
+  - cores: 8
+  - smts: 2
+generate core map, new implementation
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+packages: 1
+cores   : 8
+ht units: 2
+efficiency cores:
+apic ids           : 72, 74, 76, 78
+apic ids (fallback): 72, 74, 76, 78
+from cpu registers: 72, 74, 76, 78
+fallback: 72, 74, 76, 78
+combined: 72, 74, 76, 78
+core 0 type: Intel Atom
+core 1 type: Intel Atom
+core 2 type: Intel Atom
+core 3 type: Intel Atom
+max id per cpu: 128
+SMT mask: 1
+Core mask: 7e
+Package mask: ffffff80
+set results:
+  - packages: 1
+  - cores: 4
+  - smts: 1
+generate core map, new implementation
+0, 1, 2, 3
+packages: 1
+cores   : 4
+ht units: 1
+ - pinning rule in use   : PINNING_RULE_MCALC_SKIP_ALL
+ - desired group         : 0
+ - num cores available   : 20
+ - efficiency cores      : 4, not used
+ - active core list from affinity: 
+   + num accessible procs          : 20
+   + num logical procs             : 20
+   + current affinity (env)        : 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19
+   + sockets ids in                : 0
+   + core list                  (1): 0,2,4,6,8,10,12,14,16,17,18,19
+ - active cores          : 0,2,4,6,8,10,12,14,16,17,18,19
+ - hyperthreading        : on
+ - allowed core ids      : 0,2,4,6,8,10,12,14
+ - allowed core ids (aff): 10101010 10101010 0000
+ - used mask (string)    : 10101010 10101010 0000
+======================================================================================
+
+=========================================================================
+Version: 2024.4 Release from 2024-04-30 (change 1266454) [Release]
+Workflow: QQ-Facets
+Operation: [acis, fpba, bg]
+Architecture: Windows, ID: AMD64
+System Windows-64bit
+Using processor group 0/1
+Matrix calculation information:
+# of Nodes: 0
+Concurrency: 0
+Start ID: 0
+Node ID: 0
+HEX Mesh information:
+Hex mesh: global: [hxr o(0 | 0 | 0) s(18 | 21 | 36) np (no TSTs): 13608] 
+=========================================================================
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Tue Tue Mar 10 20:38:27 2026
+started: processing CAD model
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+========================================================================
+Processing CAD model (for field results)
+	[Improved internal geometry representation]
+	[Accuracy improvement for long shapes in inhomogeneous mesh regions]
+Version: 2024.4 Release from 2024-04-30 (change 1266454)
+PBA version 0
+Sub-Workflow: Facets-QQ-GEX
+Workflow updated: -
+Tue Tue Mar 10 20:38:27 2026
+========================================================================
+
+===========================================
+Finished CAD processing (for field results)
+===========================================
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Tue Tue Mar 10 20:38:27 2026
+Resource usage for processing CAD model:
+	Runtime                 00:00:00.00086
+	Peak Memory Usage:               16 MB
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Tue Tue Mar 10 20:38:27 2026
+started: processing CAD model
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>2026-02-10 20:38:27.00428< matrixcalc_AMD64 @ DESKTOP-VNQRFKK:  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                                                                 current system memory usage reached 70%
+                                                                 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+========================================================================
+Processing CAD model
+	[Improved internal geometry representation]
+	[Accuracy improvement for long shapes in inhomogeneous mesh regions]
+Version: 2024.4 Release from 2024-04-30 (change 1266454)
+PBA version 0
+Sub-Workflow: Facets-QQ-GEX
+Workflow updated: -
+Tue Tue Mar 10 20:38:27 2026
+========================================================================
+
+----------------------------------------------
+Used point accuracy enhancement value: 75.00%.
+----------------------------------------------
+
+=============================================================================
+Mesh statistics:
+-----------------------------------------------------------------------------
+Minimum edge length (x): 0.588 @ mesh line 13 (x)
+Maximum edge length (x): 0.588 @ mesh line 16 (x)
+Minimum face area (x): 0.18 @ mesh lines 17 | 15 (y | z)
+Maximum face area (x): 2.35 @ mesh lines 7 | 1 (y | z)
+Minimum edge length (y): 0.6 @ mesh line 17 (y)
+Maximum edge length (y): 0.6 @ mesh line 7 (y)
+Minimum face area (y): 0.176 @ mesh lines 15 | 13 (z | x)
+Maximum face area (y): 2.3 @ mesh lines 1 | 16 (z | x)
+Minimum edge length (z): 0.299 @ mesh line 15 (z)
+Maximum edge length (z): 3.92 @ mesh line 1 (z)
+Minimum face area (z): 0.353 @ mesh lines 13 | 17 (x | y)
+Maximum face area (z): 0.353 @ mesh lines 16 | 7 (x | y)
+Maximum mesh face aspect ratio (x): 6.53 : 1.0  @ mesh lines 17 | 1 (y | z)
+Maximum mesh face aspect ratio (y): 6.66 : 1.0  @ mesh lines 1 | 13 (z | x)
+Maximum mesh face aspect ratio (z): 1.02 : 1.0  @ mesh lines 13 | 7 (x | y)
+=============================================================================
+
+==============================================================================
+Available resources to store TST cells: 2147470039 (15780937.97% of mesh size)
+==============================================================================
+
+------------------------------------------------------------------------------------------------
+Geometry processing log
+	PEC background is represented by CAD geometry: false
+	Background shape: added
+	Number of CAD shapes: 1
+	Number of lumps: 0
+------------------------------------------------------------------------------------------------
+=========================================
+== CST Matrix Calculation Priority Log ==
+=========================================
+Priorities are sorted in ascending order beginning with the lowest priority
+ 
+Group | Shape-ID | ShapeName | Material | User-priority | 2D/3D-Geometry | Material-attributes | Shape-attributes | Feature-ID | Schemetype
+1 | 2 | </cst/Boundaries/> Low^X | $NFSMaterial$ | n/a | no | normal.vacuum. | boundary. | n/a | FIT_TD
+1 | 3 | </cst/Boundaries/> Low^Y | $NFSMaterial$ | n/a | no | normal.vacuum. | boundary. | n/a | FIT_TD
+1 | 4 | </cst/Boundaries/> Low^Z | $NFSMaterial$ | n/a | no | normal.vacuum. | boundary. | n/a | FIT_TD
+1 | 5 | </cst/Boundaries/> Up^X | $NFSMaterial$ | n/a | no | normal.vacuum. | boundary. | n/a | FIT_TD
+1 | 6 | </cst/Boundaries/> Up^Y | $NFSMaterial$ | n/a | no | normal.vacuum. | boundary. | n/a | FIT_TD
+1 | 7 | </cst/Boundaries/> Up^Z | $NFSMaterial$ | n/a | no | normal.vacuum. | boundary. | n/a | FIT_TD
+2 | 1 | component1:solid1 | PEC | n/a | yes | pec. | sheet. | n/a | FIT_TD
+=========================================
+************************************************************************************************
+General settings
+	PBA version: legacy
+------------------------------------------------------------------------------------------------
+Geometry processor: legacy
+	Geo accuracy: 75.000000
+	Watertightness check: true
+	Self intersection check: false
+	Inheritance (all): false
+	Normal dominance (all): false
+	Normal dominance (ports): false
+	Flanges hollow: true
+	One shape per flange: false
+	Multi threading: false
+		max # of threads used: 1
+		requested max # of threads: 1
+		representation: ppm
+		method: single thread
+		retry: no
+------------------------------------------------------------------------------------------------
+CAD processing settings are set to default
+------------------------------------------------------------------------------------------------
+Connectivity settings
+	Workflow selection: 0
+	Workflow version: 20170101
+	Gap detection: false
+	Gap detection version: 1
+	TST version: 1
+	QQ workflow: true
+	CoCo workflow: true
+	Legacy topology: false
+	Connectivity check: false
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+CAD Processing Version Info
+	ACIS version installed:	33.0.1
+	ACIS version used:	33.0.1
+------------------------------------------------------------------------------------------------
+Success method:	fb-single-thread-21
+************************************************************************************************
+
+=======================
+Finished CAD processing
+=======================
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Tue Tue Mar 10 20:38:27 2026
+Resource usage for processing CAD model:
+	Runtime                 00:00:00.00194
+	Peak Memory Usage:               16 MB
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+------------------------------------------------------------
+Parallelization Info
+------------------------------------------------------------
+Hyperthreading active: true
+Hyperthreading used: false
+Number of concurrent threads: 1
+Number of concurrent threads using GPU: 0
+Number of node domains: 1
+Domains-to-threads scaling: 2
+Average FI domain size: 1e+04
+Nice mode: true
+Delayed matrix calculation start: false
+Load balancing: Version 20090403
+Number of mesh fill domains: 1
+Memory downscale: 1
+Shared memory representation: none
+CPU load: 12.50%
+Emptiness: 0.00%
+Hex mesh complexity: 0.01190
+Geometric complexity: 0.00008
+lower size limit of domain (1D): 60
+------------------------------------------------------------
+Node order
+0
+------------------------------------------------------------
+
+------------------------------------------------------------------
+Matrix calculation job submit section 0
+Currently running jobs: 0
+Waiting jobs: 1
+Concurrency for section: 1/1
+Memory physically installed: 34.1373 GB
+Memory currently available: 9.95534 GB
+Memory already used: 24.182 GB
+Matrix calculation @ 1xN-Node 0000
+	Mesh coverage: 1190000.00 %
+	Estimated peak memory usage per node: 41 MB, tightness: 0.41 %
+	GPU acceleration: off
+	Processor group: 0
+Node distribution on 1 processor group: 1
+------------------------------------------------------------------
+
+===========================================
+Data rearrangement statistics:
+Disk IO directories:	00:00:00.0000
+Disk IO node domain files:	00:00:00.0024
+Disk IO FI domain files:	00:00:00.0000
+Disk IO meta information:	00:00:00.0000
+Sequential merge (TST):	00:00:00.0013
+===========================================
+
+1xN000:  ======================================================================
+         [Boundaries] - MCalc
+         unitcell, unitcell, unitcell, unitcell, open-add-space, open-add-space
+         ======================================================================
+
+1xN000:  ========================================
+         [Mesh] Matrix calculation - NO ACIS mode
+         [Mesh] 1xN MPI or parallelization mode
+         ========================================
+
+1xN000:  =============================
+         [Mesh] Expansion: 0 0 0 0 0 0
+         =============================
+
+1xN000:  ======================================================================================
+          - hardware info
+            + cpu name                    : 12th Gen Intel(R) Core(TM) i7-12700K
+            + sockets                     : 1
+            + cores per socket            : 8
+            + hyperthreading              : on
+            + ht-units                    : 2
+            + efficiency cores            : 4, not used
+            + max cpuid level             : 32
+            + max cpuid ext. level        : 8
+            + numa nodes                  : 1
+            + internal cpu info           : CPUID: selected engine is 'Leaf 0xB detection'
+         performance cores:
+         apic ids           : 0, 1, 8, 9, 16, 17, 24, 25, 32, 33, 40, 41, 48, 49, 56, 57
+         apic ids (fallback): 0, 1, 8, 9, 16, 17, 24, 25, 32, 33, 40, 41, 48, 49, 56, 57
+         from cpu registers: 0, 1, 8, 9, 16, 17, 24, 25, 32, 33, 40, 41, 48, 49, 56, 57
+         fallback: 0, 1, 8, 9, 16, 17, 24, 25, 32, 33, 40, 41, 48, 49, 56, 57
+         combined: 0, 1, 8, 9, 16, 17, 24, 25, 32, 33, 40, 41, 48, 49, 56, 57
+         core 0 type: Intel Core
+         core 1 type: Intel Core
+         core 2 type: Intel Core
+         core 3 type: Intel Core
+         core 4 type: Intel Core
+         core 5 type: Intel Core
+         core 6 type: Intel Core
+         core 7 type: Intel Core
+         core 8 type: Intel Core
+         core 9 type: Intel Core
+         core 10 type: Intel Core
+         core 11 type: Intel Core
+         core 12 type: Intel Core
+         core 13 type: Intel Core
+         core 14 type: Intel Core
+         core 15 type: Intel Core
+         max id per cpu: 128
+         SMT mask: 1
+         Core mask: 7e
+         Package mask: ffffff80
+         set results:
+           - packages: 1
+           - cores: 8
+           - smts: 2
+         generate core map, new implementation
+         0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+         packages: 1
+         cores   : 8
+         ht units: 2
+         efficiency cores:
+         apic ids           : 72, 74, 76, 78
+         apic ids (fallback): 72, 74, 76, 78
+         from cpu registers: 72, 74, 76, 78
+         fallback: 72, 74, 76, 78
+         combined: 72, 74, 76, 78
+         core 0 type: Intel Atom
+         core 1 type: Intel Atom
+         core 2 type: Intel Atom
+         core 3 type: Intel Atom
+         max id per cpu: 128
+         SMT mask: 1
+         Core mask: 7e
+         Package mask: ffffff80
+         set results:
+           - packages: 1
+           - cores: 4
+           - smts: 1
+         generate core map, new implementation
+         0, 1, 2, 3
+         packages: 1
+         cores   : 4
+         ht units: 1
+          - pinning rule in use   : PINNING_RULE_MCALC_SKIP_ALL
+          - desired group         : 0
+          - num cores available   : 20
+          - efficiency cores      : 4, not used
+          - active core list from affinity:
+            + num accessible procs          : 20
+            + num logical procs             : 20
+            + current affinity (env)        : 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19
+            + sockets ids in                : 0
+            + core list                  (1): 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19
+          - active cores          : 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19
+          - hyperthreading        : on
+          - skip pinning: + allowed number of sockets = available number of sockets
+                          + hyperthreading allowed by solver
+         ======================================================================================
+
+1xN000:  =========================================================================
+         Version: 2024.4 Release from 2024-04-30 (change 1266454) [Release]
+         Workflow: PBA matrix coefficients
+         Operation: [fpba, meshfill, bg, port-path, tst, coeff, surface-imp]
+         Architecture: Windows, ID: AMD64
+         System Windows-64bit
+         Using processor group 0/1
+         Matrix calculation information:
+         # of Nodes: 1
+         Concurrency: 1
+         Start ID: 0
+         Node ID: 0
+         HEX Mesh information:
+         Hex mesh: global: [hxr o(0 | 0 | 0) s(18 | 21 | 36) np (no TSTs): 13608]
+         =========================================================================
+
+1xN000:  -----------------------------------------------------
+         Memory status on node "1xN000" for matrix calculation
+         	Estimated memory consumption: 0.0410004 GB
+         	Physical memory installed: 34.1373 GB
+         	Available physical memory: 9.94947 GB
+         	Available relative memory: 29.1455 %
+         -----------------------------------------------------
+
+1xN000:  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+         Tue Tue Mar 10 20:38:27 2026
+         started: calculating matrix coefficients per node
+         >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1xN000:  ===========================================================
+         Matrix computation (PBA)
+         	[Perfect Boundary Approximation (PBA), version: legacy]
+         	[GPU acceleration: off (not supported)]
+         Version: 2024.4 Release from 2024-04-30 (change 1266454)
+         PBA version 0
+         Sub-Workflow: FPBA-1xN-TST1-Node
+         Workflow updated: -
+         Tue Tue Mar 10 20:38:27 2026
+         ===========================================================
+
+1xN000:  -------------------------------------------------
+         Geometry representation: compact
+         Shared memory: none
+         FARM allocation scheme: BBM
+         Parallelization: on, used
+
+1xN000:
+
+
+
+1xN000:  ----------------------
+         Acceleration mode: CPU
+         ----------------------
+
+1xN000:  Port homogenization method: FARM voxels copy
+1xN000:  -------------------
+         TST Statistics:
+         E Split (0 | 0 | 0)
+         E Adapt (0 | 0 | 0)
+         B Split (0 | 0 | 0)
+         B Adapt (0 | 0 | 0)
+         -------------------
+
+1xN000:  ------------------------------------------------------------------------------
+         PBA fill limit is applied in inverse mode.
+         PBA fill limit is applied on faces filled with at least 99.00% metal material.
+         --------------------------------------------------------------
+         detailed accuracy settings:
+         --------------------------------------------------------------
+         augmented fill limit:       true
+         augmented fill limit value: 99.00
+         automatic fill limit:       true
+         early fill limit:           true
+         inverse fill limit:         true
+         model complexity:           0.00
+         legacy 2015:                false
+         fixed point accuracy:       false
+         minimum point accuracy:     0
+         mesh step inheritance:      false
+         accuracy mode:
+         ------------------------------------------------------------------------------
+
+1xN000:  =================================
+         Finished matrix computation (PBA)
+         =================================
+
+1xN000:  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+         Tue Tue Mar 10 20:38:28 2026
+         Resource usage for calculating matrix coefficients per node:
+         	Runtime                          00:00:00.00351
+         	Peak Memory Estimation:                   41 MB
+         	Peak Memory Usage:                        17 MB
+         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Tue Tue Mar 10 20:38:30 2026
+Resource usage for parallelization control:
+	Runtime                      00:00:03.00035
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+------------------------------------------------------------------------------------------------------------------------------
+PBAMeshFeedback - InfoMap: 0[ms] - SBCell navigation: Using legacy edges - CornerCorrectionLinesAndWires: 0[ms] - Write: 0[ms]
+ConnectivityAXG - 
+------------------------------------------------------------------------------------------------------------------------------
+

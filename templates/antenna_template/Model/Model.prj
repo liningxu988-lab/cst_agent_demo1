@@ -1,0 +1,13 @@
+{
+   "Author": "likemaggie",
+   "Comment": "",
+   "Last Problem Type": "High Frequency",
+   "Last Solver Type": "HF Frequency Domain",
+   "Last Solver Type Abb": "f-hex",
+   "Mesh Cells": "11,900",
+   "Mesh Type": "Hexahedral",
+   "Modeler Unique ID": "5:antenna_template.cst?71779c83b93023af0988a5273e5e79d0?7342:numberofparameters=3::fport=zmin>fmode=1>zre=0>zim=0?fport=zmin>fmode=2>zre=0>zim=0?fport=zmax>fmode=1>zre=0>zim=0?fport=zmax>fmode=2>zre=0>zim=0::patch_length?patch_width?zmax",
+   "ProjectVersion": "'# MWS Version: Version 2024.4 - Apr 30 2024 - ACIS 33.0.1 -",
+   "Results": "Frequency Domain: S-Parameter",
+   "Version": "3"
+}

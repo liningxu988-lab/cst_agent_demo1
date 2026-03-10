@@ -1,0 +1,34 @@
+{
+   "execution": {
+      "classname": "SMAPowerByEmagHPCFrameReduced",
+      "libname": "SMAPowerByEmagUI"
+   },
+   "inputVariables": [
+      {
+         "name": "patch_width",
+         "type": "float",
+         "value": 10.0
+      },
+      {
+         "name": "patch_length",
+         "type": "float",
+         "value": 12.0
+      },
+      {
+         "name": "zmax",
+         "type": "float",
+         "value": 59.9584916
+      },
+      {
+         "name": "substrate_height",
+         "type": "float",
+         "value": 1.6
+      },
+      {
+         "name": "dielectric_er",
+         "type": "float",
+         "value": 4.4
+      }
+   ],
+   "outputVariables": []
+}

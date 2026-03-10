@@ -1,0 +1,30 @@
+{
+    "parameters": [
+        {
+            "expr": "10",
+            "name": "patch_width",
+            "value": "10"
+        },
+        {
+            "expr": "12",
+            "name": "patch_length",
+            "value": "12"
+        },
+        {
+            "expr": "59.958491600000002",
+            "name": "zmax",
+            "value": "59.958491600000002"
+        },
+        {
+            "expr": "1.6000000000000001",
+            "name": "substrate_height",
+            "value": "1.6000000000000001"
+        },
+        {
+            "expr": "4.4000000000000004",
+            "name": "dielectric_er",
+            "value": "4.4000000000000004"
+        }
+    ],
+    "version": 1
+}
