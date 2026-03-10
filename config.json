@@ -1,7 +1,7 @@
 {
   "_comment": "CST Auto Design - FULLY AUTOMATIC Configuration",
 
-  "deepseek_api_key": "sk-c97d3d049403416aa383ca8c51253938",
+  "deepseek_api_key": "",
   "deepseek_model": "deepseek-chat",
   "deepseek_base_url": "https://api.deepseek.com",
 
